@@ -9,3 +9,13 @@ CREATE TABLE posts(
 )
 
 DESCRIBE posts;
+
+
+CREATE TABLE `node_mysql_ts`.`posts` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(200) NOT NULL,
+  `description` TEXT NOT NULL,
+  `image_url` TEXT NULL,
+  `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`));
+
